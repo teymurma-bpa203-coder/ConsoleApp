@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36518.9 d17.14
+VisualStudioVersion = 17.14.36518.9
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcademySystem", "AcademySystem\AcademySystem.csproj", "{CC12D251-CFCA-4DB3-BF0A-C0EA2207E75C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{6589819D-E2DE-4DD3-A562-38D4415DB1FE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{A61CD7A5-C4BD-4059-8A34-580334BD7555}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{4B1711C8-69D9-4BA1-A509-B198AED44580}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{A61CD7A5-C4BD-4059-8A34-580334BD7555}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A61CD7A5-C4BD-4059-8A34-580334BD7555}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A61CD7A5-C4BD-4059-8A34-580334BD7555}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B1711C8-69D9-4BA1-A509-B198AED44580}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B1711C8-69D9-4BA1-A509-B198AED44580}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B1711C8-69D9-4BA1-A509-B198AED44580}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B1711C8-69D9-4BA1-A509-B198AED44580}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
