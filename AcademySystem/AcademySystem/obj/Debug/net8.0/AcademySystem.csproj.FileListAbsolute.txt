@@ -1,0 +1,15 @@
+C:\Users\User\OneDrive\Desktop\ConsoleApp\AcademySystem\AcademySystem\bin\Debug\net8.0\AcademySystem.exe
+C:\Users\User\OneDrive\Desktop\ConsoleApp\AcademySystem\AcademySystem\bin\Debug\net8.0\AcademySystem.deps.json
+C:\Users\User\OneDrive\Desktop\ConsoleApp\AcademySystem\AcademySystem\bin\Debug\net8.0\AcademySystem.runtimeconfig.json
+C:\Users\User\OneDrive\Desktop\ConsoleApp\AcademySystem\AcademySystem\bin\Debug\net8.0\AcademySystem.dll
+C:\Users\User\OneDrive\Desktop\ConsoleApp\AcademySystem\AcademySystem\bin\Debug\net8.0\AcademySystem.pdb
+C:\Users\User\OneDrive\Desktop\ConsoleApp\AcademySystem\AcademySystem\obj\Debug\net8.0\AcademySystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\OneDrive\Desktop\ConsoleApp\AcademySystem\AcademySystem\obj\Debug\net8.0\AcademySystem.AssemblyInfoInputs.cache
+C:\Users\User\OneDrive\Desktop\ConsoleApp\AcademySystem\AcademySystem\obj\Debug\net8.0\AcademySystem.AssemblyInfo.cs
+C:\Users\User\OneDrive\Desktop\ConsoleApp\AcademySystem\AcademySystem\obj\Debug\net8.0\AcademySystem.csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive\Desktop\ConsoleApp\AcademySystem\AcademySystem\obj\Debug\net8.0\AcademySystem.sourcelink.json
+C:\Users\User\OneDrive\Desktop\ConsoleApp\AcademySystem\AcademySystem\obj\Debug\net8.0\AcademySystem.dll
+C:\Users\User\OneDrive\Desktop\ConsoleApp\AcademySystem\AcademySystem\obj\Debug\net8.0\refint\AcademySystem.dll
+C:\Users\User\OneDrive\Desktop\ConsoleApp\AcademySystem\AcademySystem\obj\Debug\net8.0\AcademySystem.pdb
+C:\Users\User\OneDrive\Desktop\ConsoleApp\AcademySystem\AcademySystem\obj\Debug\net8.0\AcademySystem.genruntimeconfig.cache
+C:\Users\User\OneDrive\Desktop\ConsoleApp\AcademySystem\AcademySystem\obj\Debug\net8.0\ref\AcademySystem.dll
