@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Service.Services.Interfaces
 {
-    internal interface IGroupService
+    public interface IGroupService
     {
 
             Group Create(Group group);

@@ -16,9 +16,9 @@ namespace Repository.Repostories.Implementations
         {
             try
             {
-                if (data == null) throw new NotFoundException("Data Not Found! ");
-                AppDbContext<Group>.datas.Add(data);
+                if (data == null) throw new NotFoundException("Data not found!");
 
+                AppDbContext<Group>.datas.Add(data);
             }
             catch (Exception ex)
             {
@@ -26,31 +26,55 @@ namespace Repository.Repostories.Implementations
             }
         }
 
-        public void Create(global::Service.Service.Inplementations.Group group)
-        {
-            throw new NotImplementedException();
-        }
-
         public void Delete(Group data)
         {
-            throw new NotImplementedException();
+            AppDbContext<Group>.datas.Remove(data);
         }
 
         public Group Get(Predicate<Group> predicate)
         {
-            throw new NotImplementedException();
+            return predicate != null ? AppDbContext<Group>.datas.Find(predicate) : null;
         }
 
-        public List<Group> GetAll(Predicate<Group> predicate)
+        public List<Group> GetAll(Predicate<Group> predicate = null)
         {
-            throw new NotImplementedException();
+            return predicate != null ? AppDbContext<Group>.datas.FindAll(predicate) : AppDbContext<Group>.datas;
+        }
+
+        public List<Group> Search(string searchText)
+        {
+            if (string.IsNullOrWhiteSpace(searchText))
+                return new List<Group>();
+
+            return AppDbContext<Group>.datas
+                .FindAll(g => g.Name != null && g.Name.ToLower().Contains(searchText.ToLower()));
         }
 
         public void Update(Group data)
         {
-            throw new NotImplementedException();
+            Group dbGroup = Get(l => l.Id == data.Id);
+
+            if (dbGroup == null) return;
+
+            if (!string.IsNullOrEmpty(data.Name))
+            {
+                dbGroup.Name = data.Name;
+            }
+
+            if (!string.IsNullOrEmpty(data.Teacher))
+            {
+                dbGroup.Teacher = data.Teacher;
+            }
+
+            if (!string.IsNullOrEmpty(data.Room))
+            {
+                dbGroup.Room = data.Room;
+            }
+
         }
     }
-}
-    
 
+    public interface IRepository<T>
+    {
+    }
+}
