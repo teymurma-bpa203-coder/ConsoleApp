@@ -18,6 +18,7 @@ namespace AcademySystem.Controllers
 
             Helper.PrintConsole(ConsoleColor.Blue, "Add Room Name:");
             string roomName = Console.ReadLine();
+            teacherName= char.ToUpper(teacherName[0]) + teacherName.Substring(1).ToLower();
 
             Group group = new Group
             {
