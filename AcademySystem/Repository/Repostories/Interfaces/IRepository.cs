@@ -1,15 +1,8 @@
 ﻿using Domain.Common;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Repository.Repostories.Interfaces
 {
-    internal interface IRepository
-    {
-        public interface IRepostory<T> where T : BaseEntity
+    public interface IRepository<T> where T : BaseEntity
         {
            
                 void Create(T data);
@@ -19,6 +12,6 @@ namespace Repository.Repostories.Interfaces
                 List<T> GetAll(Predicate<T> predicate);
             
         }
-    }
+    
 }
 

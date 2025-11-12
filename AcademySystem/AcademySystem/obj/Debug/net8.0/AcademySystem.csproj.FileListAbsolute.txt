@@ -13,3 +13,11 @@ C:\Users\User\OneDrive\Desktop\ConsoleApp\AcademySystem\AcademySystem\obj\Debug\
 C:\Users\User\OneDrive\Desktop\ConsoleApp\AcademySystem\AcademySystem\obj\Debug\net8.0\AcademySystem.pdb
 C:\Users\User\OneDrive\Desktop\ConsoleApp\AcademySystem\AcademySystem\obj\Debug\net8.0\AcademySystem.genruntimeconfig.cache
 C:\Users\User\OneDrive\Desktop\ConsoleApp\AcademySystem\AcademySystem\obj\Debug\net8.0\ref\AcademySystem.dll
+C:\Users\User\OneDrive\Desktop\ConsoleApp\AcademySystem\AcademySystem\bin\Debug\net8.0\Domain.dll
+C:\Users\User\OneDrive\Desktop\ConsoleApp\AcademySystem\AcademySystem\bin\Debug\net8.0\Repository.dll
+C:\Users\User\OneDrive\Desktop\ConsoleApp\AcademySystem\AcademySystem\bin\Debug\net8.0\Service.dll
+C:\Users\User\OneDrive\Desktop\ConsoleApp\AcademySystem\AcademySystem\bin\Debug\net8.0\Service.pdb
+C:\Users\User\OneDrive\Desktop\ConsoleApp\AcademySystem\AcademySystem\bin\Debug\net8.0\Domain.pdb
+C:\Users\User\OneDrive\Desktop\ConsoleApp\AcademySystem\AcademySystem\bin\Debug\net8.0\Repository.pdb
+C:\Users\User\OneDrive\Desktop\ConsoleApp\AcademySystem\AcademySystem\obj\Debug\net8.0\AcademySystem.csproj.AssemblyReference.cache
+C:\Users\User\OneDrive\Desktop\ConsoleApp\AcademySystem\AcademySystem\obj\Debug\net8.0\AcademyS.D162DA06.Up2Date

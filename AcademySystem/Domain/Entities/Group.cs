@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Domain.Entities
 {
-    internal class Group : BaseEntity
+    public class Group : BaseEntity
     {
           public string Name { get; set; }
 

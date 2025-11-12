@@ -1,12 +1,8 @@
-﻿using Repository.Data;
+﻿using Domain.Entities;
+
+
+using Repository.Data;
 using Repository.Exceptions;
-using Repository.Exceptions;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 
 namespace Repository.Repostories.Implementations
 {

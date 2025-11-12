@@ -1,14 +1,10 @@
 ﻿using AcademySystem.Helpers;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
+using Domain.Entities;
+using Service.Services.Implementations;
 
 namespace AcademySystem.Controllers
 {
-    public class GroupController : IGroupSe
+    public class GroupController 
     {
         GroupService _groupService = new();
 
