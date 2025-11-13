@@ -7,6 +7,7 @@ namespace AcademySystem.Controllers
     public class GroupController
     {
         GroupService _groupService = new();
+        StudentService _studentService = new();
 
         public void Create()
         {
@@ -99,7 +100,7 @@ namespace AcademySystem.Controllers
 
             if (int.TryParse(idStr, out int id))
             {
-                if (_groupService.GetAll().Count != 0)
+                if (_studentService.GetAll().Count != 0)
                 {
                     Helper.PrintConsole(ConsoleColor.Red, "You can't delete this group because group has students:");
 
