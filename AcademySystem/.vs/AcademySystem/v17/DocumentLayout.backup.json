@@ -94,8 +94,7 @@
               "RelativeToolTip": "AcademySystem\\Controllers\\StudentControllers.cs",
               "ViewState": "AgIAAB8AAAAAAAAAAAAQwDcAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-12T06:39:30.466Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-12T06:39:30.466Z"
             },
             {
               "$type": "Document",
@@ -127,9 +126,9 @@
               "Title": "GroupController.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\ConsoleApp\\AcademySystem\\AcademySystem\\Controllers\\GroupController.cs",
               "RelativeDocumentMoniker": "AcademySystem\\Controllers\\GroupController.cs",
-              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\ConsoleApp\\AcademySystem\\AcademySystem\\Controllers\\GroupController.cs",
-              "RelativeToolTip": "AcademySystem\\Controllers\\GroupController.cs",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAYwGsAAAARAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\ConsoleApp\\AcademySystem\\AcademySystem\\Controllers\\GroupController.cs*",
+              "RelativeToolTip": "AcademySystem\\Controllers\\GroupController.cs*",
+              "ViewState": "AgIAAHoAAAAAAAAAAAAgwJMAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-10T19:33:04.59Z",
               "EditorCaption": ""
@@ -180,8 +179,7 @@
               "RelativeToolTip": "Service\\Services\\Implementations\\GroupService.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAIAzwCEAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T16:24:51.709Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-10T16:24:51.709Z"
             },
             {
               "$type": "Document",

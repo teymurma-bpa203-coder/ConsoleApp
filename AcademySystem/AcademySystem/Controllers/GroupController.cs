@@ -145,6 +145,10 @@ namespace AcademySystem.Controllers
                 if (string.IsNullOrWhiteSpace(newTeacher)) newTeacher = group.Teacher;
                 if (string.IsNullOrWhiteSpace(newRoom)) newRoom = group.Room;
 
+                newName = newName.ToUpper();
+
+                newTeacher = char.ToUpper(newTeacher[0]) + newTeacher.Substring(1).ToLower();
+
                 Group updatedGroup = new Group
                 {
                     Name = newName,
