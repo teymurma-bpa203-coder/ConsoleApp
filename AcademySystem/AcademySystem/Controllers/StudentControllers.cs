@@ -34,18 +34,53 @@ namespace AcademySystem.Controllers
                 goto EnterGroupId;
             }
 
-            Helper.PrintConsole(ConsoleColor.Blue, "Enter Student Name:");
+        inputName: Helper.PrintConsole(ConsoleColor.Blue, "Enter Student Name:");
             string name = Console.ReadLine();
+            if (name.Any(char.IsDigit))
+            {
+                Helper.PrintConsole(ConsoleColor.Red, "You can't use any special symbol or number in name");
+                goto inputName;
+                return;
+            }
+            else if (name.Length < 3 || name.Length > 15)
+            {
+                Helper.PrintConsole(ConsoleColor.Red, "surname must be longer than 3 character and shorter than 15 character");
+                goto inputName;
+            }
+            name= char.ToUpper(name[0]) + name.Substring(1).ToLower();
 
-            Helper.PrintConsole(ConsoleColor.Blue, "Enter Student Surname:");
+
+        inpuSurname: Helper.PrintConsole(ConsoleColor.Blue, "Enter Student Surname:");
             string surname = Console.ReadLine();
 
-            Helper.PrintConsole(ConsoleColor.Blue, "Enter Student Age:");
+            if (surname.Any(char.IsDigit))
+            {
+                Helper.PrintConsole(ConsoleColor.Red, "You can't use any special symbol or number in surname");
+                goto inpuSurname;
+                return;
+            }
+            else if (surname.Length < 3 || surname.Length > 15)
+            {
+                Helper.PrintConsole(ConsoleColor.Red, "name must be longer than 3 character and shorter than 15 character");
+                goto inpuSurname;
+            }
+            surname= char.ToUpper(surname[0]) + surname.Substring(1).ToLower();
+
+
+        InputAge: Helper.PrintConsole(ConsoleColor.Blue, "Enter Student Age:");
             string ageStr = Console.ReadLine();
 
             if (!int.TryParse(ageStr, out int age))
             {
                 Helper.PrintConsole(ConsoleColor.Red, "Invalid age!");
+                goto InputAge;
+                return;
+
+            }
+            if (age < 18)
+            {
+                Helper.PrintConsole(ConsoleColor.Red, "Invalid age!");
+                goto InputAge;
                 return;
             }
 
@@ -60,7 +95,7 @@ namespace AcademySystem.Controllers
             var result = _studentService.Create(student);
 
             Helper.PrintConsole(ConsoleColor.Green,
-                $"Student created successfully! Id: {result.Id}, Name: {result.Name}, Group: {result.Group.Name}");
+                $"Student created successfully! Id: {result.Id}, Name: {result.Name}, Surname:{result.Surname}, Group: {result.Group.Name}");
         }
 
         public void Update()

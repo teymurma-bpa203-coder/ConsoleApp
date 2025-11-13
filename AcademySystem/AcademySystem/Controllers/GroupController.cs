@@ -4,21 +4,35 @@ using Service.Services.Implementations;
 
 namespace AcademySystem.Controllers
 {
-    public class GroupController 
+    public class GroupController
     {
         GroupService _groupService = new();
 
         public void Create()
         {
-            Helper.PrintConsole(ConsoleColor.Blue, "Add Group Name:");
+        nameEnter: Helper.PrintConsole(ConsoleColor.Blue, "Add Group Name:");
             string groupName = Console.ReadLine();
 
-            Helper.PrintConsole(ConsoleColor.Blue, "Add Teacher Name:");
+            if (!groupName.Any(Char.IsUpper))
+            {
+                Helper.PrintConsole(ConsoleColor.Red, "group name all characters must be upper case");
+                goto nameEnter;
+            }
+        inputName: Helper.PrintConsole(ConsoleColor.Blue, "Add Teacher Name:");
             string teacherName = Console.ReadLine();
+
+
+        
+            if (teacherName.Any(char.IsDigit))
+            {
+                Helper.PrintConsole(ConsoleColor.Red, "You can't use any special symbol or number in teacher name");
+                goto inputName;
+                return;
+            }
 
             Helper.PrintConsole(ConsoleColor.Blue, "Add Room Name:");
             string roomName = Console.ReadLine();
-            teacherName= char.ToUpper(teacherName[0]) + teacherName.Substring(1).ToLower();
+            teacherName = char.ToUpper(teacherName[0]) + teacherName.Substring(1).ToLower();
 
             Group group = new Group
             {
@@ -85,6 +99,13 @@ namespace AcademySystem.Controllers
 
             if (int.TryParse(idStr, out int id))
             {
+                if (_groupService.GetAll().Count != 0)
+                {
+                    Helper.PrintConsole(ConsoleColor.Red, "You can't delete this group because group has students:");
+
+                    return;
+                }
+               
                 _groupService.Delete(id);
                 Helper.PrintConsole(ConsoleColor.Green, $"Group with Id {id} deleted successfully!");
             }
